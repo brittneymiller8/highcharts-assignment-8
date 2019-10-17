@@ -1,0 +1,80 @@
+html {
+    font-size: 100%; /* keep */
+    box-sizing: border-box; /* keep */
+}
+
+* {
+    box-sizing: inherit; /* keep */
+}
+body {
+    font-family: Baskerville, ‘Times New Roman’, Times, serif;
+    background: #11345E; /* keep */
+    color: #fff; /* keep */
+    margin: 0; /* keep */
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: Trebuchet, Tahoma, Arial, sans-serif;
+}
+
+#name {
+  font-size: medium;
+  font-style: oblique;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+h1 {
+  text-shadow: .1em .1em #09090A;
+}
+
+#container {
+    max-width: 1280px; /* keep */
+    margin: auto; /* keep */
+    display: grid; /* keep */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    grid-template-areas:
+        "header"
+        "text"
+        "charts";
+}
+
+#charts {
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+#text {
+  background: #fff;
+  padding: 0 15px 0 15px;
+  color: #000;
+  line-height: 1.25em;
+}
+
+/* pseudo classes */
+a {
+    color: #D11CE6; /* keep */
+}
+
+a:hover {
+    color: #f4cdb7; /* keep */
+    text-decoration: none; /* keep */
+}
+
+/* media queries below - only 1 is needed */
+@media screen and (max-width: 800px) {
+  #container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    max-width: 350px;
+    grid-template-areas:
+        "header"
+        "text"
+        "charts";
+    };
+  }
