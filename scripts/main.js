@@ -50,6 +50,7 @@ Highcharts.chart('container1', {
 
 });
 
+
 Highcharts.chart('container2', {
     chart: {
         type: 'bar'
